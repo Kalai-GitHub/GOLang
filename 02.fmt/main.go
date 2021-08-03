@@ -8,6 +8,7 @@ var j = "Hello type"
 func main() {
 	fmt.Println("i :", i)
 
+	// format printing
 	fmt.Printf("%T\n", i)  //type of i int
 	fmt.Printf("%b\n", i)  //base 2(binary) of i
 	fmt.Printf("%x\n", i)  //base 16(hexadecimal), with lower letters for a-f
