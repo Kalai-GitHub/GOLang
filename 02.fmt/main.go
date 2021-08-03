@@ -15,6 +15,14 @@ func main() {
 	fmt.Printf("%#x\n", i) //base 16(hexadecimal with 0x in the prefix)
 	fmt.Printf("%T\t%b\t%#x\n", i, i, i)
 
+	//to get normal value of i
+	fmt.Printf("%v\n", i)
+
 	fmt.Println("j :", j)
 	fmt.Printf("%T\n", j)
+
+	// String print
+	s := fmt.Sprintf("%T\t%b\t%#x\n", i, i, i)
+	fmt.Println(s)
+
 }
