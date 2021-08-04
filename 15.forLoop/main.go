@@ -28,4 +28,10 @@ func main() {
 			fmt.Printf("%d\tBuzz\n", i)
 		}
 	}
+
+	fmt.Println("\nfor without (init;condition;post) statments and with break :")
+	for {
+		fmt.Println("Hello")
+		break
+	}
 }
