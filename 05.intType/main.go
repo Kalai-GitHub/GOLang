@@ -21,4 +21,8 @@ func main() {
 
 	c = -128
 	fmt.Println(c)
+
+	z := 5
+	z += 1
+	fmt.Println(z)
 }
