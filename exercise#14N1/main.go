@@ -9,5 +9,14 @@ func main() {
 		fmt.Println(i)
 		count++
 	}
-	fmt.Println(count)
+	fmt.Println("Age: ", count)
+
+	fmt.Println("for without condition")
+	for {
+		if bd > 2021 {
+			break
+		}
+		fmt.Println(bd)
+		bd++
+	}
 }
