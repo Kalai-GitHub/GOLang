@@ -24,4 +24,14 @@ func main() {
 	for i, v := range s {
 		fmt.Printf("Hexadecimal value of the index %d is %#x \n", i, v)
 	}
+
+	var x string
+	x = "first"
+	fmt.Println(x)
+	x = "second"
+	fmt.Println(x)
+
+	x = "first " + x
+	fmt.Println(x)
+
 }
