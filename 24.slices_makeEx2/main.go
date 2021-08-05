@@ -12,7 +12,7 @@ func main() {
 
 	//type2: make function
 	a = make([]int, 6, 10) //to set the length(6) and the capacity(10) of the slice
-	fmt.Println(len(a), a)
+	fmt.Println(a, "len:", len(a), "capacity:", cap(a))
 
 	for i := 0; i <= 5; i++ {
 		a[i] = i
