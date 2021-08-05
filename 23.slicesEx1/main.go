@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//composite used to hold different type of values
+//aggregate data type is used to store the same type values in array or slice
 func main() {
 	//slice type 1
 	var s1 []float64
