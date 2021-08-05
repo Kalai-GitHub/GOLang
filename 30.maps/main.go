@@ -8,6 +8,7 @@ func main() {
 	x := make(map[string]int)
 	x["H2O"] = 100
 	fmt.Println(x, len(x))
+	fmt.Println("*************************************")
 
 	//map type2
 	m := map[string]string{
@@ -25,6 +26,10 @@ func main() {
 	if j, ok := m["B"]; ok {
 		fmt.Println("The value is : ", j)
 	}
+
+	//adding element in the map
+	m["K"] = "Kite"
+	fmt.Println(m)
 
 	fmt.Println("*************************************")
 
