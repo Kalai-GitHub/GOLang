@@ -26,6 +26,12 @@ func (p person) speak() {
 
 func bar(h human) {
 	fmt.Println("hello ", h)
+	switch h.(type) {
+	case person:
+		fmt.Println("I am in bar with ", h.(person).first)
+	case secretAgent:
+		fmt.Println("Iam in bar with ", h.(secretAgent).first)
+	}
 }
 
 func main() {
