@@ -36,7 +36,7 @@ func main() {
 
 	for i, v := range x {
 		fmt.Println("Index:", i)
-		fmt.Println("Last Name:", v.firstName)
+		fmt.Println("First Name:", v.firstName)
 		for j, v1 := range v.favoriteIcecreamFlavors {
 			fmt.Println(j, v1)
 		}
