@@ -58,7 +58,7 @@ func main() {
 	sa1.speak()
 	p.speak()
 
-	//polymorphism - bar function takes many different
+	//polymorphism - bar function takes many different types as an argument
 	bar(sa1)
 	bar(p)
 
