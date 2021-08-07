@@ -7,6 +7,10 @@ func main() {
 	fmt.Printf("%T\n", x)
 	c := x()
 	fmt.Println(c)
+
+	fmt.Println(x())
+
+	fmt.Println(bar()())
 }
 
 func bar() func() int {
