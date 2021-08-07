@@ -35,8 +35,8 @@ func main() {
 
 }
 
-func switchOnType(x interface{}) {
-	switch x.(type) {
+func switchOnType(x interface{}) { // empty interface
+	switch x.(type) { // type conversion
 	case int:
 		fmt.Println("int")
 	case string:
