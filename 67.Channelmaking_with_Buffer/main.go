@@ -12,4 +12,8 @@ func main() {
 	fmt.Println(<-c) //receive from the channel
 	fmt.Println(<-c)
 	fmt.Println(<-c)
+
+	fmt.Println("_________________________________")
+
+	fmt.Printf("%T\n", c)
 }
