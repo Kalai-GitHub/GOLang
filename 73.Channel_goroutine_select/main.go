@@ -10,7 +10,7 @@ func main() {
 	quit := make(chan int)
 
 	//send
-	go foo(even, odd, quit)
+	go send(even, odd, quit)
 
 	//receive
 	receive(even, odd, quit)
@@ -32,7 +32,7 @@ func receive(even, odd, quit <-chan int) {
 	}
 }
 
-func foo(even, odd, quit chan<- int) {
+func send(even, odd, quit chan<- int) {
 	for i := 0; i <= 10; i++ {
 		if i%2 == 0 {
 			even <- i
