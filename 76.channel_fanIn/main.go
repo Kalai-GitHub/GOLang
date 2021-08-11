@@ -37,6 +37,7 @@ func receive(even, odd <-chan int, fanIn chan<- int) {
 	var ws sync.WaitGroup
 	ws.Add(2)
 
+	//fanIn receives the value from even and odd
 	go func() {
 		for v := range even {
 			fanIn <- v
