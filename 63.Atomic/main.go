@@ -21,9 +21,8 @@ func main() {
 	for i := 0; i < goroutiness; i++ {
 		go func() {
 			atomic.AddInt64(&counter, 1)
-			fmt.Println("Counter\t", atomic.LoadInt64(&counter))
-			//time.Sleep(time.Second)
 			runtime.Gosched() //Gosched yields the processor allowing other goroutines to run. It does not suspend the current goroutine, so execution resumes automatically.
+			fmt.Println("Counter\t", atomic.LoadInt64(&counter))
 			ws.Done()
 
 		}()
