@@ -33,11 +33,12 @@ func send(even, odd chan<- int) {
 	close(odd)
 }
 
+//fan in - Taking values from many channels, and putting those values onto one channel.
 func receive(even, odd <-chan int, fanIn chan<- int) {
 	var ws sync.WaitGroup
 	ws.Add(2)
 
-	//fanIn receives the value from even and odd
+	//fanIn receives the value from even and odd[interlocking coordinated pieces]
 	go func() {
 		for v := range even {
 			fanIn <- v
