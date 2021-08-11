@@ -28,7 +28,7 @@ func main() {
 	}
 
 	p.speak()
-	saySomething(&p) //can pass only value of p
+	saySomething(&p) //can pass only &p
 	//saySomething(p) - this is wrong, can not use p as type human in argument to saySomething()
 
 }
