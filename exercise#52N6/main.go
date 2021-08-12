@@ -14,7 +14,7 @@ func main() {
 func gen() <-chan int {
 	c := make(chan int)
 
-	go func() { // without the goroutine unable to complete the below for loop.
+	go func() { // without the goroutine unable to complete the below for loop. or close the channel c
 		for i := 0; i < 10; i++ {
 			c <- i
 		}
