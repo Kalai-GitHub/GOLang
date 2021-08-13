@@ -11,7 +11,8 @@ func (c customErr) Error() string {
 }
 
 func foo(e error) {
-	fmt.Println("foo ran ", e)
+	//fmt.Println("foo ran ", e)
+	fmt.Println("foo ran ", e, "\n", e.(customErr).info) //e.(customErr) - this is called assertion
 }
 
 func main() {
