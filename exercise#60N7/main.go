@@ -18,5 +18,5 @@ func main() {
 	c1 := customErr{
 		info: "I need a pizza",
 	}
-	foo(c1) //first
+	foo(c1)
 }
