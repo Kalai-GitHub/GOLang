@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"log"
 )
@@ -25,7 +24,8 @@ func main() {
 
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
-		se := errors.New("square root of negative number is invalid")
+		//se := errors.New("square root of negative number is invalid") // errors.New will accept only string
+		se := fmt.Errorf("square root of negative number is invalid %v ", f) //fmt.Errorf will accept string and value
 		return 0, sqrtError{"11.110 ", "32.12 ", se}
 	}
 	return 42, nil
