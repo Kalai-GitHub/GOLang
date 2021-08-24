@@ -57,4 +57,18 @@ func main() {
 	myTrie.Insert("orc")
 	fmt.Println(myTrie.Search("orc"))
 
+	toAdd := []string{
+		"orago",
+		"apple",
+		"erica",
+		"oregano",
+		"ball",
+		"orea",
+	}
+
+	for _, v := range toAdd {
+		myTrie.Insert(v)
+	}
+	fmt.Println(myTrie.Search("ball"))
+
 }
