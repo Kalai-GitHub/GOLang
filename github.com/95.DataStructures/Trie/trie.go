@@ -70,5 +70,5 @@ func main() {
 		myTrie.Insert(v)
 	}
 	fmt.Println(myTrie.Search("ball"))
-
+	fmt.Println(myTrie.Search("uuuu"))
 }
