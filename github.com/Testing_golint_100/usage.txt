@@ -1,0 +1,3 @@
+gofmt - formats go code
+go vet - reports suspicious constructs [in terminal go vet ./...]
+golint - reports poor coding style [in terminal golint ./...]
