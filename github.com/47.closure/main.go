@@ -15,6 +15,9 @@ func main() {
 	c := scope()
 	fmt.Println("Scope Method: ", c())
 
+	d, f := outer()
+	fmt.Println(d(), f)
+
 }
 
 func increment() func() int {
@@ -36,3 +39,12 @@ func scope() func() int {
 // 	outer_var := 444
 // 	return foo
 // }
+
+func outer() (func() int, int) {
+	outer_var := 2
+	inner := func() int {
+		outer_var += 99
+		return outer_var
+	}
+	return inner, outer_var
+}
